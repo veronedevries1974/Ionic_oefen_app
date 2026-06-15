@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--integratie Ionicframework-->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+</head>
+
+<body>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar>
+                <ion-title>Ionic Toolbar</ion-title>
+                <ion-buttons>
+                <ion-button>Knop1</ion-button>
+                <ion-button>Knop2</ion-button>
+                <ion-button>Knop3</ion-button>
+                <ion-button>Knop4</ion-button>
+                <ion-button>Knop5</ion-button>
+                </ion-buttons>
+            </ion-toolbar>
+        </ion-header>
+
+    <ion-content>
+        <ion-grid>
+            <ion-rows>
+            <ion-row>
+                <ion-col size-md="6"> 
+                    <ion-item>
+            <ion-label position="floating">Invoerveld</ion-label>
+            <ion-input></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col>Ion-col</ion-col>
+                <ion-col>Ion-col</ion-col>
+                <ion-col>Ion-col</ion-col>
+                <ion-col>Ion-col</ion-col>
+                <ion-col>Ion-col</ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>Ion-col1</ion-col>
+                <ion-col size-md="6">
+                    <ion-item>
+            <ion-label position="floating">Invoerveld</ion-label>
+            <ion-input></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col>Ion-col</ion-col>
+                <ion-col>Ion-col</ion-col>
+                <ion-col>Ion-col</ion-col>
+                <ion-col>Ion-col</ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>Ion-col</ion-col>
+                <ion-col>Ion-col</ion-col>
+                <ion-col size-md="6">
+                    <ion-item>
+            <ion-label position="floating">Invoerveld</ion-label>
+            <ion-input></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col>Ion-col</ion-col>
+                <ion-col>Ion-col</ion-col>
+                <ion-col>Ion-col</ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>Ion-col</ion-col>
+                <ion-col>Ion-col</ion-col>
+                <ion-col>Ion-col</ion-col>
+                <ion-col size-md="6">
+                    <ion-item>
+            <ion-label position="floating">Invoerveld</ion-label>
+            <ion-input></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col>Ion-col</ion-col>
+                <ion-col>Ion-col</ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>Ion-col</ion-col>
+                <ion-col>Ion-col</ion-col>
+                <ion-col>Ion-col</ion-col>
+                <ion-col>Ion-col</ion-col>
+                <ion-col size-md="6">
+                    <ion-item>
+            <ion-label position="floating">Invoerveld</ion-label>
+            <ion-input></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col>Ion-col</ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>Ion-col</ion-col>
+                <ion-col>Ion-col</ion-col>
+                <ion-col>Ion-col</ion-col>
+                <ion-col>Ion-col</ion-col>
+                <ion-col>Ion-col</ion-col>
+                <ion-col size-md="6" offset-md="2">
+                    <ion-item>
+            <ion-label position="floating">Invoerveld</ion-label>
+            <ion-input></ion-input>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            </ion-rows>
+        </ion-grid>
+
+        <ion-item>
+            <ion-label position="floating">Invoerveld</ion-label>
+            <ion-input></ion-input>
+        </ion-item>
+    </ion-content>
+
+    <ion-footer>
+            <ion-toolbar>
+                <ion-buttons slot="start">
+                    <ion-button color="dark">Dark</ion-button>
+                    <ion-button expand="block">Block</ion-button>
+                    <ion-button size="large">Large</ion-button>
+                    <ion-button>Knop4</ion-button>
+                    <ion-button>Knop5</ion-button>
+                </ion-buttons>
+            </ion-toolbar>
+        </ion-footer>
+
+    </ion-app>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gecorrigeerd Ionic Document</title>
+    <!-- Integratie Ionicframework -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+</head>
+
+<body>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar>
+                <ion-title>Ionic Toolbar</ion-title>
+                <!-- SLOT TOEGEVOEGD: Knoppen netjes aan de rechterkant -->
+                <ion-buttons slot="end">
+                    <ion-button>Knop1</ion-button>
+                    <ion-button>Knop2</ion-button>
+                    <ion-button>Knop3</ion-button>
+                    <ion-button>Knop4</ion-button>
+                    <ion-button>Knop5</ion-button>
+                </ion-buttons>
+            </ion-toolbar>
+        </ion-header>
+
+        <ion-content class="ion-padding">
+            <!-- VERWIJDERD: <ion-rows> (bestaat niet, direct naar <ion-row>) -->
+            <ion-grid>
+                <!-- Rij 1 -->
+                <ion-row>
+                    <ion-col size-md="6"> 
+                        <!-- MODERNE IONIC SYNTAX: Label direct in de input -->
+                        <ion-input label="Invoerveld" label-placement="floating" fill="solid"></ion-input>
+                    </ion-col>
+                    <ion-col>Ion-col</ion-col>
+                    <ion-col>Ion-col</ion-col>
+                    <ion-col>Ion-col</ion-col>
+                    <ion-col>Ion-col</ion-col>
+                    <ion-col>Ion-col</ion-col>
+                </ion-row>
+
+                <!-- Rij 2 -->
+                <ion-row>
+                    <ion-col>Ion-col1</ion-col>
+                    <ion-col size-md="6">
+                        <ion-input label="Invoerveld" label-placement="floating" fill="solid"></ion-input>
+                    </ion-col>
+                    <ion-col>Ion-col</ion-col>
+                    <ion-col>Ion-col</ion-col>
+                    <ion-col>Ion-col</ion-col>
+                    <ion-col>Ion-col</ion-col>
+                </ion-row>
+
+                <!-- Rij 3 -->
+                <ion-row>
+                    <ion-col>Ion-col</ion-col>
+                    <ion-col>Ion-col</ion-col>
+                    <ion-col size-md="6">
+                        <ion-input label="Invoerveld" label-placement="floating" fill="solid"></ion-input>
+                    </ion-col>
+                    <ion-col>Ion-col</ion-col>
+                    <ion-col>Ion-col</ion-col>
+                    <ion-col>Ion-col</ion-col>
+                </ion-row>
+
+                <!-- Rij 4 -->
+                <ion-row>
+                    <ion-col>Ion-col</ion-col>
+                    <ion-col>Ion-col</ion-col>
+                    <ion-col>Ion-col</ion-col>
+                    <ion-col size-md="6">
+                        <ion-input label="Invoerveld" label-placement="floating" fill="solid"></ion-input>
+                    </ion-col>
+                    <ion-col>Ion-col</ion-col>
+                    <ion-col>Ion-col</ion-col>
+                </ion-row>
+
+                <!-- Rij 5 -->
+                <ion-row>
+                    <ion-col>Ion-col</ion-col>
+                    <ion-col>Ion-col</ion-col>
+                    <ion-col>Ion-col</ion-col>
+                    <ion-col>Ion-col</ion-col>
+                    <ion-col size-md="6">
+                        <ion-input label="Invoerveld" label-placement="floating" fill="solid"></ion-input>
+                    </ion-col>
+                    <ion-col>Ion-col</ion-col>
+                </ion-row>
+
+                <!-- Rij 6 -->
+                <ion-row>
+                    <ion-col>Ion-col</ion-col>
+                    <ion-col>Ion-col</ion-col>
+                    <ion-col>Ion-col</ion-col>
+                    <ion-col>Ion-col</ion-col>
+                    <ion-col>Ion-col</ion-col>
+                    <ion-col size-md="6" offset-md="2">
+                        <ion-input label="Invoerveld" label-placement="floating" fill="solid"></ion-input>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+
+            <!-- Los invoerveld onder de grid -->
+            <div class="ion-margin-top">
+                <ion-input label="Invoerveld" label-placement="floating" fill="solid"></ion-input>
+            </div>
+        </ion-content>
+
+        <ion-footer>
+            <ion-toolbar>
+                <ion-buttons slot="start">
+                    <ion-button color="dark">Dark</ion-button>
+                    <!-- Expand="block" werkt alleen goed buiten ion-buttons, hier hersteld naar reguliere knop -->
+                    <ion-button>Block</ion-button>
+                    <ion-button size="large">Large</ion-button>
+                    <ion-button>Knop4</ion-button>
+                    <ion-button>Knop5</ion-button>
+                </ion-buttons>
+            </ion-toolbar>
+        </ion-footer>
+    </ion-app>
+</body>
+</html>
+
+<!-- 1. De Header (Knoppen over elkaar)Wat er staat: 
+Je probeert 5 knoppen in de toolbar te plaatsen via <ion-buttons>.
+Het probleem: Je hebt geen slot-attribuut meegegeven (zoals slot="end" of slot="start"). 
+Hierdoor weet Ionic niet waar de knoppen moeten staan en kunnen ze visueel over de titel heen vallen.
+2. De Content & Grid (Onbekende tags)Het probleem: 
+Je gebruikt de tag <ion-rows> (meervoud) om de rijen heen. 
+Deze tag bestaat niet in Ionic. Hierdoor breekt de grid-lay-out volledig. 
+Rijen moeten direct binnen de <ion-grid> staan.
+3. De Rijen en Kolommen (Verschuivende lay-out)
+Binnen de grid probeer je een trapeffect te maken. 
+In elke rij geef je één specifieke kolom een breedte van de helft van het scherm (size-md="6") 
+op tablets/desktops.De overige kolommen hebben geen vaste maat, dus die delen de rest van de ruimte.
+In de allerlaatste rij gebruik je offset-md="2". 
+Dit duwt die specifieke kolom op grotere schermen 2 kolommen naar rechts.4. 
+Verouderde Formulieren (Invoervelden)Sinds Ionic v7 is de position="floating" op <ion-label> verouderd 
+De moderne, correcte manier is om het label rechtstreeks als attribuut aan het invoerveld mee te geven: 
+<ion-input label="Invoerveld" label-placement="floating"></ion-input>-->
