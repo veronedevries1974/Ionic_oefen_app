@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--integratie Ionicframework-->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+</head>
+
+<body>
+    <ion-app>
+
+        <ion-header>
+            <ion-navbar>
+                <ion-button ion-button icon-only menuToggle>
+                    <ion-icon name="menu"></ion-icon>
+                </ion-button>
+                <ion-title>Page Title</ion-title>
+                <ion-buttons end>
+                    <ion-button ion-button icon-only (click)="openModal()">
+                        <ion-icon name="options"></ion-icon>
+                    </ion-button>
+                </ion-buttons>
+            </ion-navbar>
+            <ion-toolbar>
+                <ion-title>Ionic Toolbar</ion-title>
+                <ion-buttons>
+                <ion-button>Knop1</ion-button>
+                <ion-button>Knop2</ion-button>
+                <ion-button>Knop3</ion-button>
+                <ion-button>Knop4</ion-button>
+                <ion-button>Knop5</ion-button>
+                </ion-buttons>
+            </ion-toolbar>
+        </ion-header>
+
+        <ion-footer>
+            <ion-toolbar>
+                <ion-title>Ionic Toolbar</ion-title>
+                <ion-buttons>
+                <ion-button ion-button color = “dark”>Dark Button</ion-button>
+                <ion-button ion-button block>Block Button></ion-button>
+                <ion-button ion-button large>Large Button></ion-button>
+                <ion-button>Knop4</ion-button>
+                <ion-button>Knop5</ion-button>
+                </ion-buttons>
+            </ion-toolbar>
+        </ion-footer>
+
+    </ion-app>
+    
+</body>
+</html>
+
+<!--Volgens AI-modus Google 
+Verkeerde HTML-tags: <ion-navbar> bestaat niet in moderne Ionic. Dit moet <ion-toolbar> zijn.
+Oude Ionic v3 attributen: Attributen zoals ion-button (als attribuut op een tag), menuToggle, end, block en large zijn verouderd. 
+Moderne Ionic gebruikt hier specifieke properties voor (zoals expand="block" of size="large").
+Angular syntax in platte HTML: De code (click)="openModal()" is Angular-syntax. 
+Omdat Ionic hier via een simpele <script>-tag (CDN) wordt ingeladen zonder Angular, herkent de browser dit niet. 
+Dit moet onclick="openModal()" zijn.
+Typografische aanhalingstekens: Bij color = “dark” worden verkeerde aanhalingstekens gebruikt (“ ” in plaats van " "). 
+.-->
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ionic Pagina</title>
+    <!-- Integratie Ionic Framework Core -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+</head>
+
+<body>
+    <ion-app>
+
+        <!-- Bovenbalk van de app -->
+        <ion-header>
+            <ion-toolbar>
+                <!-- Menuknop aan de linkerkant -->
+                <ion-buttons slot="start">
+                    <ion-menu-button></ion-menu-button>
+                </ion-buttons>
+                
+                <ion-title>Pagina Titel</ion-title>
+                
+                <!-- Optiesknop aan de rechterkant -->
+                <ion-buttons slot="end">
+                    <ion-button onclick="openModal()">
+                        <ion-icon slot="icon-only" name="options"></ion-ion>
+                    </ion-button>
+                </ion-buttons>
+            </ion-toolbar>
+
+            <!-- Tweede toolbar met knoppen -->
+            <ion-toolbar>
+                <ion-buttons slot="start">
+                    <ion-button>Knop1</ion-button>
+                    <ion-button>Knop2</ion-button>
+                    <ion-button>Knop3</ion-button>
+                    <ion-button>Knop4</ion-button>
+                    <ion-button>Knop5</ion-button>
+                </ion-buttons>
+            </ion-toolbar>
+        </ion-header>
+
+        <!-- Hoofdinhoud (toegevoegd voor een complete app) -->
+        <ion-content class="ion-padding">
+            <p>Hier komt de inhoud van je app.</p>
+        </ion-content>
+
+        <!-- Onderbalk van de app -->
+        <ion-footer>
+            <ion-toolbar>
+                <ion-buttons slot="start">
+                    <ion-button color="dark">Dark</ion-button>
+                    <ion-button expand="block">Block</ion-button>
+                    <ion-button size="large">Large</ion-button>
+                    <ion-button>Knop4</ion-button>
+                    <ion-button>Knop5</ion-button>
+                </ion-buttons>
+            </ion-toolbar>
+        </ion-footer>
+
+    </ion-app>
+
+    <script>
+        // JavaScript functie voor de klikactie
+        function openModal() {
+            alert('Modal openen!');
+        }
+    </script>
+</body>
+</html>
