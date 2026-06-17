@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gecorrigeerd Ionic Document</title>
+    <!-- Integratie Ionicframework -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+</head>
+
+<body>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar>
+                <ion-button slot="start" size="small" fill="outline" color="secundary">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                    Back
+                </ion-button>
+                <ion-button slot="end" size="small" fill="outline" color="secundary">
+                    <ion-icon name="search-outline"></ion-icon>
+                    Search
+                </ion-button>
+            </ion-toolbar>
+        </ion-header>
+
+        <ion-content class="ion-padding">           
+            <ion-grid>
+                <!--Rij 1 Titel in het midden met ion-text-center-->
+                <ion-row>
+                    <ion-col class="ion-text-center">HC Total Clinic</ion-col> 
+                </ion-row>
+<br>
+                <!--Rij 2 Subtitel in het midden met ion-text-center-->
+                <ion-row>
+                    <ion-col class="ion-text-center">Select a time slot</ion-col>
+                </ion-row>
+                
+<br>            <!--Day Month Year dichterbij elkaar met class en style-->
+                <ion-row class="ion-justify-content-center" style="width: 100%; max-width: 200px; margin: 0 auto;"> 
+                    <ion-col class="ion-text-center">Day</ion-col>
+                    <ion-col class="ion-text-center">Month</ion-col>
+                    <ion-col class="ion-text-center">Year</ion-col>
+                </ion-row>
+
+<br>          
+                <!--Rij 4 Morning -->
+                <ion-row> <!--icoon en tekst dichterbij elkaar met size en class-->
+                    <ion-col size="auto">
+                        <ion-icon name="partly-sunny-sharp"></ion-icon>
+                    </ion-col class="ion-text-left">
+                    <ion-col>Morning</ion-col>
+                </ion-row>
+<br>
+                <!--Rij 5 three time slots-->
+                <ion-row><!--row-col-button-->
+                    <ion-col>
+                        <ion-button expand="block" fill="outline" color="primary" size="small">
+                        09:30
+                        </ion-button>
+                    </ion-col>
+                    <ion-col>
+                        <ion-button expand="block" fill="outline" color="primary" size="small">
+                        10:20
+                        </ion-button>
+                    </ion-col>
+                    <ion-col>
+                        <ion-button expand="block" fill="outline" color="primary" size="small">
+                        11:30
+                    </ion-button>
+                    </ion-col>
+                </ion-row>
+
+                <!--Rij 6 Zon voor Afternoon-->
+                <ion-row><!--icoon en tekst dichterbij elkaar met size en class-->
+                    <ion-col size="auto">
+                        <ion-icon name="sunny-sharp"></ion-icon>
+                    </ion-col class="ion-text-left">
+                    <ion-col>Afternoon</ion-col>
+                </ion-row>
+
+                <!--Rij 7 three time slots-->
+                <ion-row><!--row-col-button-->
+                    <ion-col>
+                        <ion-button expand="block" fill="outline" color="primary" size="small">
+                        12:00
+                        </ion-button>
+                    </ion-col>
+                    <ion-col>
+                        <ion-button expand="block" fill="outline" color="primary" size="small">
+                        12:30
+                        </ion-button>
+                    </ion-col>
+                    <ion-col>
+                        <ion-button expand="block" fill="outline" color="primary" size="small">
+                        13:00
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+
+                <!-- Rij 8 three time slots-->
+                <ion-row><!--row-col-button-->
+                    <ion-col>
+                        <ion-button expand="block" fill="outline" color="primary" size="small">
+                        14:30
+                        </ion-button>
+                    </ion-col>
+                    <ion-col>
+                        <ion-button expand="block" fill="outline" color="primary" size="small">
+                        15:00
+                        </ion-button>
+                    </ion-col>
+                    <ion-col>
+                        <ion-button expand="block" fill="outline" color="primary" size="small">
+                        16:30
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+<br>
+                <!--Rij 9 Maan voor Evening-->
+                <ion-row><!--icoon en tekst dichterbij elkaar met size en class-->
+                    <ion-col size="auto">
+                   <ion-icon name="moon-sharp"></ion-icon>
+                    </ion-col class="ion-text-left">
+                    <ion-col>Evening</ion-col>
+                </ion-row>
+
+                <!--Rij 10 two time slots-->
+                <ion-row><!--row-col-button-->
+                    <ion-col> 
+                        <ion-button expand="block" fill="outline" color="primary" size="small">
+                        17:30
+                        </ion-button>
+                    </ion-col>
+                    <ion-col>
+                        <ion-button expand="block" fill="outline" color="primary" size="small">
+                        19:00
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-content>
+
+        <ion-footer>
+            <ion-toolbar> <!--linkerknop alleen icoontje met start-->
+                <ion-button slot="start" fill="clear">
+                    <ion-icon name="ellipse-outline" slot="icon-only"></ion-icon>
+                </ion-button>
+
+                <!--kalender in het midden met ion-title-->
+                <ion-title class="ion-text-center">
+                    <ion-button fill="clear" color="secondary">
+                        <ion-icon name="calendar-outline" slot="icon-only" size="large"></ion-icon>
+                    </ion-button>
+                </ion-title>
+
+                <!--rechterknop alleen icoontje met end-->
+                <ion-button slot="end" fill="clear">
+                    <ion-icon name="ellipse-outline" slot="icon-only"></ion-icon>
+                </ion-button>
+            </ion-toolbar>
+        </ion-footer>
+    </ion-app>
+</body>
+</html>
